@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">compackTV</string>
+    <string name="text_app_name">COMPACK TiVi</string>
+    <string name="text_welcome">Welcome back dear audience!</string>
+    <string name="text_button_login">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="hide_password">Hide Password</string>
+    <string name="show_password">Show Password</string>
+</resources>

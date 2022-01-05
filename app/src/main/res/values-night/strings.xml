@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_app_name">COMPACK TiVi</string>
+    <string name="text_welcome">Welcome back!</string>
+    <string name="text_button_login">Login</string>
+</resources>
