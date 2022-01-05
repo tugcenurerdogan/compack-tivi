@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.compacktv.R
 import com.example.compacktv.ui.theme.DarkRed
+import com.example.compacktv.ui.theme.Green
 import com.example.compacktv.ui.theme.LightRed
 
 @Composable
@@ -42,6 +43,7 @@ fun LoginScreen(navController: NavController) {
         Email()
         Password()
         LoginButton(navController)
+        RegisterButton(navController)
     }
 }
 
@@ -186,6 +188,25 @@ fun LoginButton(navController: NavController) {
     ) {
         Text(
             text = stringResource(R.string.text_button_login)
+        )
+    }
+}
+
+@Composable
+fun RegisterButton(navController: NavController) {
+    Button(
+        onClick = { navController.navigate("register") },
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(5.dp),
+        contentPadding = PaddingValues(16.dp),
+        colors = ButtonDefaults.buttonColors(
+            backgroundColor = Green,
+            contentColor = Color.White
+        )
+    ) {
+        Text(
+            text = stringResource(R.string.text_button_register)
         )
     }
 }

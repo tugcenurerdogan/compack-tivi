@@ -13,6 +13,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.compacktv.ui.LoginScreen
 import com.example.compacktv.ui.MovieDetailScreen
 import com.example.compacktv.ui.MovieListScreen
+import com.example.compacktv.ui.RegisterScreen
 import com.example.compacktv.ui.theme.CompackTVTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,6 +30,7 @@ class MainActivity : ComponentActivity() {
                         composable("login") { LoginScreen(navController) }
                         composable("movieList") { MovieListScreen(navController) }
                         composable("movieDetail") { MovieDetailScreen() }
+                        composable("register"){ RegisterScreen(navController)}
                     }
                 }
             }
