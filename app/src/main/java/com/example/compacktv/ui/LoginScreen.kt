@@ -61,7 +61,7 @@ fun AppIcon() {
             elevation = 2.dp,
         ) {
             Image(
-                painter = painterResource(R.drawable.b),
+                painter = painterResource(R.drawable.app_icon),
                 contentDescription = "",
                 contentScale = ContentScale.Crop
             )

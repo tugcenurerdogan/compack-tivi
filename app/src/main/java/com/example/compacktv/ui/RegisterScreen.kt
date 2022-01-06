@@ -53,13 +53,13 @@ fun InstructionText() {
 
 @Composable
 fun RegName() {
-    val emailState = remember { mutableStateOf(TextFieldValue()) }
+    val nameState = remember { mutableStateOf(TextFieldValue()) }
     TextField(
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 5.dp),
-        value = emailState.value,
-        onValueChange = { emailState.value = it },
+        value = nameState.value,
+        onValueChange = { nameState.value = it },
         label = {
             Text(
                 text = stringResource(id = R.string.name_hint),
@@ -71,20 +71,19 @@ fun RegName() {
             unfocusedIndicatorColor = Color.Transparent,
             backgroundColor = Color.White
         ),
-        shape = RoundedCornerShape(8.dp),
-        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
+        shape = RoundedCornerShape(8.dp)
     )
 }
 
 @Composable
 fun RegSurname() {
-    val emailState = remember { mutableStateOf(TextFieldValue()) }
+    val surnameState = remember { mutableStateOf(TextFieldValue()) }
     TextField(
         modifier = Modifier
             .fillMaxWidth()
             .padding(top = 10.dp, start = 5.dp, end = 5.dp),
-        value = emailState.value,
-        onValueChange = { emailState.value = it },
+        value = surnameState.value,
+        onValueChange = { surnameState.value = it },
         label = {
             Text(
                 text = stringResource(id = R.string.surname_hint),
@@ -96,8 +95,7 @@ fun RegSurname() {
             unfocusedIndicatorColor = Color.Transparent,
             backgroundColor = Color.White
         ),
-        shape = RoundedCornerShape(8.dp),
-        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
+        shape = RoundedCornerShape(8.dp)
     )
 }
 
